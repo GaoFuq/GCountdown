@@ -46,7 +46,7 @@ public class GCountdown {
         this.onTickTextSuffix = onTickTextSuffix;
     }
 
-    private void startTimer(Lifecycle lifecycle) {
+    public void startTimer(Lifecycle lifecycle) {
         if (timer == null) {
             timer = new GTimer(totalTime, intervalTime, new GTimer.CallBack() {
                 @Override
